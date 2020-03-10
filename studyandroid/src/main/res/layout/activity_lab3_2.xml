@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Lab3_2Activity">
+
+    <Button
+        android:id="@+id/visibleTrue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="visuble true"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"/>
+    <TextView
+        android:id="@+id/textVisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hello world"
+        android:layout_marginBottom="10dp"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:background="#FF0000"
+        android:visibility="visible"
+        android:clickable="true"/>
+
+    <Button
+        android:id="@+id/visibleFalse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="visibl eFalse" />
+
+
+</LinearLayout>
