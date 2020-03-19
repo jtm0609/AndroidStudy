@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Part2_2_EventListener extends AppCompatActivity implements View.OnClickListener {
+public class Part2_EventListener extends AppCompatActivity implements View.OnClickListener {
 
     private TextView mTextView;
     private Button mVisibleBtn;

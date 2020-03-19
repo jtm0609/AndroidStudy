@@ -1,14 +1,14 @@
 package com.jtmcompany.androidstudy;
 
-import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Part2_7_Resource2 extends AppCompatActivity {
+import android.os.Bundle;
+
+public class Part4_add_ConstraintLayout extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_part2_7__resource2);
+        setContentView(R.layout.activity_part2_4_add__constraint_layout);
     }
 }

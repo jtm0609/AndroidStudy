@@ -8,7 +8,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Part2_6_Event extends AppCompatActivity {
+public class Part6_Event extends AppCompatActivity {
 
     float initX;
     @Override

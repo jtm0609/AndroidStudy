@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Part2_8_DB.Part2_8_DBMS_Sqlite_Realm2"
+    tools:context=".Part8_DB.Part8_DBMS_Sqlite_Realm2"
     android:orientation="vertical"
     android:gravity="center">
     <TextView

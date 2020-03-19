@@ -3,6 +3,8 @@
     package="com.jtmcompany.androidstudy">
 
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,52 +13,60 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Part2_8_DB.Part2_8_DBMS_Sqlite_Realm2"></activity>
-        <activity android:name=".Part2_8_DB.Part2_8_DBMS_Sqlite_Realm">
+        <activity android:name=".Part9_Permission.ReadFileActivity"></activity>
+        <activity android:name=".Part9_Permission.Part9_Permission">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Part2_7_Resource2">
+        <activity android:name=".Part8_DB.Part8_DBMS_Sqlite_Realm2" />
+        <activity android:name=".Part8_DB.Part8_DBMS_Sqlite_Realm">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Part2_7_Resource">
+        <activity android:name=".Part7_Resource2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Part2_6_Event">
+        <activity android:name=".Part7_Resource">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Part2_5_Ararm">
+        <activity android:name=".Part6_Event">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Part2_4_add_ConstraintLayout">
+        <activity android:name=".Part5_Ararm">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Part2_4_Layout" />
-        <activity android:name=".Part2_3_ViewActivity" />
-        <activity android:name=".Part2_2_EventListener" />
+        <activity android:name=".Part4_add_ConstraintLayout">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Part4_Layout" />
+        <activity android:name=".Part3_ViewActivity" />
+        <activity android:name=".Part2_EventListener" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

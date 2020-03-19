@@ -6,7 +6,7 @@ import androidx.core.content.res.ResourcesCompat;
 import android.os.Bundle;
 import android.widget.TabHost;
 
-public class Part2_4_Layout extends AppCompatActivity {
+public class Part4_Layout extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

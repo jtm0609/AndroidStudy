@@ -1,4 +1,4 @@
-package com.jtmcompany.androidstudy.Part2_8_DB;
+package com.jtmcompany.androidstudy.Part8_DB;
 
 import io.realm.RealmObject;
 

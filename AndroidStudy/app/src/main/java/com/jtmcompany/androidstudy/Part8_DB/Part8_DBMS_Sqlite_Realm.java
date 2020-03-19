@@ -1,4 +1,4 @@
-package com.jtmcompany.androidstudy.Part2_8_DB;
+package com.jtmcompany.androidstudy.Part8_DB;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,7 +12,7 @@ import com.jtmcompany.androidstudy.R;
 
 import io.realm.Realm;
 
-public class Part2_8_DBMS_Sqlite_Realm extends AppCompatActivity implements View.OnClickListener {
+public class Part8_DBMS_Sqlite_Realm extends AppCompatActivity implements View.OnClickListener {
     Button Button;
     EditText Title;
     EditText Content;
@@ -54,7 +54,7 @@ public class Part2_8_DBMS_Sqlite_Realm extends AppCompatActivity implements View
                 vo.content=content;
             }
         });
-        Intent intent =new Intent(this, Part2_8_DBMS_Sqlite_Realm2.class);
+        Intent intent =new Intent(this, Part8_DBMS_Sqlite_Realm2.class);
         intent.putExtra("title",title);
         startActivity(intent);
     }

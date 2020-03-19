@@ -1,4 +1,4 @@
-package com.jtmcompany.androidstudy.Part2_8_DB;
+package com.jtmcompany.androidstudy.Part8_DB;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import com.jtmcompany.androidstudy.R;
 
 import io.realm.Realm;
 
-public class Part2_8_DBMS_Sqlite_Realm2 extends AppCompatActivity {
+public class Part8_DBMS_Sqlite_Realm2 extends AppCompatActivity {
     TextView Title;
     TextView Content;
     @Override

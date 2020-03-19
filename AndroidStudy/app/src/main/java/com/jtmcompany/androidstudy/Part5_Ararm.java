@@ -21,7 +21,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Calendar;
 
-public class Part2_5_Ararm extends AppCompatActivity implements View.OnClickListener {
+public class Part5_Ararm extends AppCompatActivity implements View.OnClickListener {
 
     Button vibrationBtn;
     Button systemBeepBtn;
@@ -102,7 +102,7 @@ public class Part2_5_Ararm extends AppCompatActivity implements View.OnClickList
             DatePickerDialog dateDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
                 @Override
                 public void onDateSet(DatePicker datePicker, int year, int monthOfYear, int dayOfMonth) {
-                    Toast.makeText(Part2_5_Ararm.this, year + ":" + (monthOfYear + 1) + ":" + dayOfMonth, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Part5_Ararm.this, year + ":" + (monthOfYear + 1) + ":" + dayOfMonth, Toast.LENGTH_SHORT).show();
                 }
             }, year, month, day);
             dateDialog.show();
@@ -114,7 +114,7 @@ public class Part2_5_Ararm extends AppCompatActivity implements View.OnClickList
             TimePickerDialog timeDialog = new TimePickerDialog(this, new TimePickerDialog.OnTimeSetListener() {
                 @Override
                 public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-                    Toast.makeText(Part2_5_Ararm.this, hourOfDay + ":" + minute, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Part5_Ararm.this, hourOfDay + ":" + minute, Toast.LENGTH_SHORT).show();
                 }
             }, hour, minute, false);
             timeDialog.show();
@@ -137,12 +137,12 @@ public class Part2_5_Ararm extends AppCompatActivity implements View.OnClickList
         @Override
         public void onClick(DialogInterface dialog, int which) {
             if (dialog == customDialog && which == DialogInterface.BUTTON_POSITIVE) {
-                Toast.makeText(Part2_5_Ararm.this, "custom dialog 확인 click", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Part5_Ararm.this, "custom dialog 확인 click", Toast.LENGTH_SHORT).show();
             } else if (dialog == listDialog) {
                 String[] datas = getResources().getStringArray(R.array.dialog_array);
-                Toast.makeText(Part2_5_Ararm.this, datas[which] + " 선택 하셨습니다. ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Part5_Ararm.this, datas[which] + " 선택 하셨습니다. ", Toast.LENGTH_SHORT).show();
             } else if (dialog == alertDialog && which == DialogInterface.BUTTON_POSITIVE) {
-                Toast.makeText(Part2_5_Ararm.this, "alert dialog ok click .....", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Part5_Ararm.this, "alert dialog ok click .....", Toast.LENGTH_SHORT).show();
             }
         }
     };

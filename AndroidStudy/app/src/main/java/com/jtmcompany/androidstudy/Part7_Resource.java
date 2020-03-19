@@ -7,7 +7,7 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Part2_7_Resource extends AppCompatActivity {
+public class Part7_Resource extends AppCompatActivity {
     ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class Part2_7_Resource extends AppCompatActivity {
 
             @Override
             public void onAnimationEnd(Animation animation) {
-                Animation anim=AnimationUtils.loadAnimation(Part2_7_Resource.this,R.anim.move);
+                Animation anim=AnimationUtils.loadAnimation(Part7_Resource.this,R.anim.move);
 
                 //마지막상황에서 안멈추게하기
                 //안그러면 원상복귀가됨
