@@ -7,4 +7,12 @@
         <item>Bounce</item>
         <item>Carbon</item>
     </string-array>
+
+    <string-array name="arrayListItem">
+        <item> 청주</item>
+        <item> 대전</item>
+        <item> 서울</item>
+        <item> 광주</item>
+        <item> 부산</item>
+    </string-array>
 </resources>
