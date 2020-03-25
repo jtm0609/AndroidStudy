@@ -54,7 +54,6 @@ public class Part9_Permission extends AppCompatActivity {
         }
 
 
-
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -105,4 +104,8 @@ public class Part9_Permission extends AppCompatActivity {
                 fileWritePermission=true;
         }
     }
+
+
 }
+
+
