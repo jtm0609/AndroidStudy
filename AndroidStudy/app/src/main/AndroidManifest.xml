@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -14,21 +14,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Part14_GoogleApp">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Part14_Intent2">
-            <intent-filter>
-                <action android:name="INTENT_ACTION" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Part14_Intent">
+        <activity android:name=".Part15_FLAG_TEST3"></activity>
+        <activity android:name=".Part15_FLAG_TEST2"
+            android:taskAffinity="com.jtm"/>
+        <activity android:name=".Part15_FLAG_TEST">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,73 +25,28 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".Part15_FLAG"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".Part15_ActivityLifeCycle2" />
+        <activity android:name=".Part15_ActivityLifeCycle" />
+        <activity android:name=".Part14_GoogleApp" />
+        <activity android:name=".Part14_Intent2" />
+        <activity android:name=".Part14_Intent" />
+        <activity
             android:name=".Part12_ActionBar"
             android:label="상세보기"
-            android:theme="@style/MainTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Part10_AdapterView_ListView">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/MainTheme" />
+        <activity android:name=".Part10_AdapterView_ListView" />
         <activity android:name=".Part9_Permission.ReadFileActivity" />
-        <activity android:name=".Part9_Permission.Part9_Permission">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".Part9_Permission.Part9_Permission" />
         <activity android:name=".Part8_DB.Part8_DBMS_Sqlite_Realm2" />
-        <activity android:name=".Part8_DB.Part8_DBMS_Sqlite_Realm">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Part7_Resource2">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Part7_Resource">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Part6_Event">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Part5_Ararm">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Part4_add_ConstraintLayout">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".Part8_DB.Part8_DBMS_Sqlite_Realm" />
+        <activity android:name=".Part7_Resource2" />
+        <activity android:name=".Part7_Resource" />
+        <activity android:name=".Part6_Event" />
+        <activity android:name=".Part5_Ararm" />
+        <activity android:name=".Part4_add_ConstraintLayout" />
         <activity android:name=".Part4_Layout" />
         <activity android:name=".Part3_ViewActivity" />
         <activity android:name=".Part2_EventListener" />
@@ -113,16 +57,14 @@
         </activity>
 
         <provider
-            android:authorities="com.jtmcompany.androidstudy.FileProvider"
             android:name="androidx.core.content.FileProvider"
+            android:authorities="com.jtmcompany.androidstudy.FileProvider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_paths"/>
+                android:resource="@xml/provider_paths" />
         </provider>
-
-
     </application>
 
 </manifest>
