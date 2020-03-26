@@ -14,9 +14,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Part15_FLAG_TEST3"></activity>
-        <activity android:name=".Part15_FLAG_TEST2"
-            android:taskAffinity="com.jtm"/>
+        <activity android:name=".Part9_Permission.Part16_AsyncTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Part16_anonymousThread_RunOnUiThread">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Part16_Thread_Handler">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Part15_FLAG_TEST3" />
+        <activity
+            android:name=".Part15_FLAG_TEST2"
+            android:taskAffinity="com.jtm" />
         <activity android:name=".Part15_FLAG_TEST">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
