@@ -15,4 +15,11 @@
         <item> 광주</item>
         <item> 부산</item>
     </string-array>
+
+    <string-array name="array_voice">
+        <item>카톡</item>
+        <item>카톡왓숑</item>
+        <item>카톡카톡</item>
+        <item>카카오톡</item>
+    </string-array>
 </resources>
