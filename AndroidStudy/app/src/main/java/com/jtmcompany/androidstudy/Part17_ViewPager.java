@@ -64,7 +64,7 @@ public class Part17_ViewPager extends AppCompatActivity implements View.OnClickL
         public Fragment getItem(int position) {
             Log.d("tak","test: "+ position);
             return fragments.get(position);
-        }
+    }
 
         @Override
         public int getCount() {

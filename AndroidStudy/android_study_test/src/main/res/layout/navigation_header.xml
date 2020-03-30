@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@android:color/holo_orange_dark"
+    android:text="Hello Taek"
+    android:gravity="bottom"
+    android:paddingBottom="11dp"
+    android:paddingLeft="16dp"
+    android:textStyle="bold"
+    android:textSize="20dp"
+    android:textColor="@android:color/white">
+
+</TextView>
