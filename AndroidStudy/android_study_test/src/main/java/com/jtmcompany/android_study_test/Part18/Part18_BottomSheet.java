@@ -1,4 +1,4 @@
-package com.jtmcompany.android_study_test;
+package com.jtmcompany.android_study_test.Part18;
 
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.jtmcompany.android_study_test.R;
 
 import java.util.ArrayList;
 import java.util.List;

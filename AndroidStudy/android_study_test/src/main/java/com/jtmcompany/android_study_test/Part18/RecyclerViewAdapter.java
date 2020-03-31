@@ -1,4 +1,4 @@
-package com.jtmcompany.android_study_test;
+package com.jtmcompany.android_study_test.Part18;
 
 import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.jtmcompany.android_study_test.R;
 
 import java.util.List;
 
