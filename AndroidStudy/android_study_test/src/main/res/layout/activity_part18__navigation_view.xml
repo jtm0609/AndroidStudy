@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Part18_NavigationView"
+    tools:context=".Part18.Part18_NavigationView"
     android:fitsSystemWindows="true"
     android:id="@+id/main_drawer">
 

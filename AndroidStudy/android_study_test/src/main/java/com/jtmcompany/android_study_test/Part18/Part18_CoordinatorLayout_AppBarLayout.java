@@ -1,4 +1,4 @@
-package com.jtmcompany.android_study_test;
+package com.jtmcompany.android_study_test.Part18;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import com.jtmcompany.android_study_test.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,6 +35,7 @@ CoordinatorLayout coordinatorLayout;
         for( int i=0; i<20; i++){
             list.add("Item= "+i);
         }
+
 
         recyclerview.setLayoutManager(new LinearLayoutManager(this));
         recyclerview.setAdapter(new MyAdapter(list));
