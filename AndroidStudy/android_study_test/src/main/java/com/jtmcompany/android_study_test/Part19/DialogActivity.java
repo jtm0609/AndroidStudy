@@ -1,4 +1,4 @@
-package com.jtmcompany.android_study_test;
+package com.jtmcompany.android_study_test.Part19;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.jtmcompany.android_study_test.R;
 
 public class DialogActivity extends AppCompatActivity {
 ImageView finishBtn;

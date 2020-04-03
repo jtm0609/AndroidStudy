@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="120dp"
-    tools:context=".DialogActivity"
+    tools:context=".Part19.DialogActivity"
     android:orientation="vertical"
     android:background="@android:color/holo_blue_dark"
     android:padding="16dip">

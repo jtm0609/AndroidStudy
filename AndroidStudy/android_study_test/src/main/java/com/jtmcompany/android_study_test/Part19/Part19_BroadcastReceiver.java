@@ -1,4 +1,4 @@
-package com.jtmcompany.android_study_test;
+package com.jtmcompany.android_study_test.Part19;
 
 import android.Manifest;
 import android.content.BroadcastReceiver;
@@ -20,6 +20,8 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.jtmcompany.android_study_test.R;
 
 import java.util.ArrayList;
 import java.util.List;

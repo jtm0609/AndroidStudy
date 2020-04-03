@@ -1,4 +1,4 @@
-package com.jtmcompany.android_study_test;
+package com.jtmcompany.android_study_test.Part19;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

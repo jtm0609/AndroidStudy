@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Part19.Part19_BroadcastReceiver"
+    tools:context=".MainActivity2$Part20_BindService"
     android:orientation="vertical">
 
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/broad_recycler"/>
+        android:text="바인드서비스시작"
+        android:layout_gravity="center_horizontal"/>
 
 </LinearLayout>

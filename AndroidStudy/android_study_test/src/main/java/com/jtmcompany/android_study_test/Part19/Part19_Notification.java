@@ -1,5 +1,6 @@
-package com.jtmcompany.android_study_test;
+package com.jtmcompany.android_study_test.Part19;
 
+import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -16,6 +17,9 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
+
+import com.jtmcompany.android_study_test.MainActivity2;
+import com.jtmcompany.android_study_test.R;
 
 public class Part19_Notification extends AppCompatActivity implements View.OnClickListener {
     Button basicBtn;
@@ -34,6 +38,8 @@ public class Part19_Notification extends AppCompatActivity implements View.OnCli
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_part19__notification);
+
+
         basicBtn = findViewById(R.id.lab2_basic);
         bigPictureBtn = findViewById(R.id.lab2_bigpicture);
         bigTextBtn = findViewById(R.id.lab2_bigtext);
@@ -41,6 +47,7 @@ public class Part19_Notification extends AppCompatActivity implements View.OnCli
         progressBtn = findViewById(R.id.lab2_progress);
         headsupBtn = findViewById(R.id.lab2_headsup);
         messageBtn = findViewById(R.id.lab2_message);
+
 
         basicBtn.setOnClickListener(this);
         bigPictureBtn.setOnClickListener(this);
@@ -69,12 +76,11 @@ public class Part19_Notification extends AppCompatActivity implements View.OnCli
             if (v == headsupBtn) {
                 channel = new NotificationChannel(channelId, channelName, NotificationManager.IMPORTANCE_HIGH);
             } else {
-                channel = new NotificationChannel(channelId, channelName, NotificationManager.IMPORTANCE_DEFAULT);
+                channel = new NotificationChannel(channelId, channelName, NotificationManager.IMPORTANCE_HIGH);
             }
             channel.setDescription(channelDescription);
             manager.createNotificationChannel(channel);
             builder = new NotificationCompat.Builder(this, channelId);
-
         } else{
             //API 26하위버젼은 이전방식이용
             builder=new NotificationCompat.Builder(this);
@@ -83,8 +89,10 @@ public class Part19_Notification extends AppCompatActivity implements View.OnCli
         builder.setContentTitle("Content Title");
         builder.setContentText("Content Message");
         builder.setAutoCancel(true);
+        builder.setDefaults(Notification.DEFAULT_SOUND|Notification.DEFAULT_VIBRATE);
 
-        Intent intent=new Intent(this,MainActivity2.class);
+
+        Intent intent=new Intent(this, MainActivity2.class);
         PendingIntent pIntent=PendingIntent.getActivity(this,10,intent,PendingIntent.FLAG_UPDATE_CURRENT);
         builder.setContentIntent(pIntent);
 
