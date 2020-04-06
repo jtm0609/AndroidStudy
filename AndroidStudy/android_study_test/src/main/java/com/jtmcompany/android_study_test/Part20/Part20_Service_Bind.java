@@ -1,4 +1,4 @@
-package com.jtmcompany.android_study_test;
+package com.jtmcompany.android_study_test.Part20;
 
 import android.content.ComponentName;
 import android.content.Intent;
@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.jtmcompany.android_study_test.R;
 
 public class Part20_Service_Bind extends AppCompatActivity {
     private BindService mService;

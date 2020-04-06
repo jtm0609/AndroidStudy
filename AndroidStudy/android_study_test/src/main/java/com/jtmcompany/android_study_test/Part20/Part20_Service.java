@@ -1,4 +1,4 @@
-package com.jtmcompany.android_study_test;
+package com.jtmcompany.android_study_test.Part20;
 
 import android.Manifest;
 import android.content.BroadcastReceiver;
@@ -21,6 +21,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+
+import com.jtmcompany.android_study_test.R;
 
 import java.io.File;
 import java.io.IOException;

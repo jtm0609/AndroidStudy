@@ -1,6 +1,5 @@
 package com.jtmcompany.android_study_test.Part19;
 
-import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -68,7 +67,7 @@ public class Part19_Notification extends AppCompatActivity implements View.OnCli
         manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            String channelId = "one-channel";
+            String channelId = "oneChannel";
             String channelName = "My Channel One";
             String channelDescription = "My Channel One Description";
 
@@ -88,8 +87,7 @@ public class Part19_Notification extends AppCompatActivity implements View.OnCli
         builder.setSmallIcon(R.mipmap.ic_launcher);
         builder.setContentTitle("Content Title");
         builder.setContentText("Content Message");
-        builder.setAutoCancel(true);
-        builder.setDefaults(Notification.DEFAULT_SOUND|Notification.DEFAULT_VIBRATE);
+
 
 
         Intent intent=new Intent(this, MainActivity2.class);

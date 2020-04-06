@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Part20_Service_Bind"
+    tools:context=".Part20.Part20_Service_Bind"
     android:orientation="vertical">
 
     <Button

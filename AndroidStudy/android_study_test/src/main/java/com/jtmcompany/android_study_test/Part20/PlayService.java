@@ -1,4 +1,4 @@
-package com.jtmcompany.android_study_test;
+package com.jtmcompany.android_study_test.Part20;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -14,6 +14,8 @@ import android.os.IBinder;
 import android.util.Log;
 
 import androidx.core.app.NotificationCompat;
+
+import com.jtmcompany.android_study_test.R;
 
 public class PlayService extends Service implements MediaPlayer.OnCompletionListener {
     MediaPlayer player;

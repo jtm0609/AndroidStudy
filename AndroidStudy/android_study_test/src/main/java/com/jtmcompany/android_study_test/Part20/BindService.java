@@ -1,4 +1,4 @@
-package com.jtmcompany.android_study_test;
+package com.jtmcompany.android_study_test.Part20;
 
 import android.app.Service;
 import android.content.Intent;
