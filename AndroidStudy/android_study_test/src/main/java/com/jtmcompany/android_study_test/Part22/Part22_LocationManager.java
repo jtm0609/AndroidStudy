@@ -1,4 +1,4 @@
-package com.jtmcompany.android_study_test;
+package com.jtmcompany.android_study_test.Part22;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -12,6 +12,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.res.ResourcesCompat;
+
+import com.jtmcompany.android_study_test.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

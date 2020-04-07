@@ -1,4 +1,4 @@
-package com.jtmcompany.android_study_test;
+package com.jtmcompany.android_study_test.Part21;
 
 import android.Manifest;
 import android.content.Intent;
@@ -16,6 +16,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
+
+import com.jtmcompany.android_study_test.R;
 
 public class Part21_contactProvider extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.jtmcompany.android_study_test;
+package com.jtmcompany.android_study_test.Part22;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -20,6 +20,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.jtmcompany.android_study_test.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

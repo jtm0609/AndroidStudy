@@ -1,4 +1,4 @@
-package com.jtmcompany.android_study_test;
+package com.jtmcompany.android_study_test.Part21;
 
 import android.Manifest;
 import android.content.Intent;
@@ -16,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import com.bumptech.glide.Glide;
+import com.jtmcompany.android_study_test.R;
 import com.zhihu.matisse.Matisse;
 import com.zhihu.matisse.MimeType;
 
