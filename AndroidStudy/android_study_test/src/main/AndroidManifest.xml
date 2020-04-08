@@ -11,15 +11,16 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.jtmcompany.android_study_test.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
 
-    <uses-permission android:name="com.jtmcompany.android_study_test.MAPS_RECEIVE"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
-
-
-    <permission android:name="com.jtmcompany.android_study_test.MAPS_RECEIVE"
-        android:protectionLevel="signature"/>
+    <permission
+        android:name="com.jtmcompany.android_study_test.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
 
     <application
         android:allowBackup="true"
@@ -29,55 +30,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Part24_XML_JSON_Parshing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Part24_Network">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyAUQSzEifCUb7kZxXoOEjq0Grs1ylNIt5c"/>
+            android:value="AIzaSyAUQSzEifCUb7kZxXoOEjq0Grs1ylNIt5c" />
         <meta-data
             android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version"/>
+            android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".Part23_Map">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Part22.Part22_FusedLocationAPI">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Part22.Part22_LocationManager">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Part21.Part21_Matisse">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Part21.Part21_Glide">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Part21.Part21_contactProvider">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".Part23_Map"></activity>
+        <activity android:name=".Part22.Part22_FusedLocationAPI"></activity>
+        <activity android:name=".Part22.Part22_LocationManager"></activity>
+        <activity android:name=".Part21.Part21_Matisse"></activity>
+        <activity android:name=".Part21.Part21_Glide"></activity>
+        <activity android:name=".Part21.Part21_contactProvider"></activity>
         <activity android:name=".Part20.Part20_Service_Bind">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -102,13 +82,7 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".Part19.Part19_Notification">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".Part19.Part19_Notification"></activity>
 
         <receiver
             android:name=".Part19.MyReceiver"
