@@ -29,7 +29,22 @@
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Part25_Retrofit.Part25_Retrofit">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Part25.Part25_HTTP">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".Part24_XML_JSON_Parshing">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -52,12 +67,12 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".Part23_Map"></activity>
-        <activity android:name=".Part22.Part22_FusedLocationAPI"></activity>
-        <activity android:name=".Part22.Part22_LocationManager"></activity>
-        <activity android:name=".Part21.Part21_Matisse"></activity>
-        <activity android:name=".Part21.Part21_Glide"></activity>
-        <activity android:name=".Part21.Part21_contactProvider"></activity>
+        <activity android:name=".Part23_Map" />
+        <activity android:name=".Part22.Part22_FusedLocationAPI" />
+        <activity android:name=".Part22.Part22_LocationManager" />
+        <activity android:name=".Part21.Part21_Matisse" />
+        <activity android:name=".Part21.Part21_Glide" />
+        <activity android:name=".Part21.Part21_contactProvider" />
         <activity android:name=".Part20.Part20_Service_Bind">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -82,7 +97,7 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".Part19.Part19_Notification"></activity>
+        <activity android:name=".Part19.Part19_Notification" />
 
         <receiver
             android:name=".Part19.MyReceiver"
